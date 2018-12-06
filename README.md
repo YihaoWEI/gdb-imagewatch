@@ -3,6 +3,9 @@ GDB ImageWatch is a tool for visualizing in-memory buffers during debug
 sessions using GDB. It works out of the box with instances of the OpenCV `Mat`
 class, but can also be customized to work with any arbitrary data structure.
 
+# Eclipse trick  
+This repo needs a little more configuration for Eclipse users. Please check [here](#EclipseIDE)
+
 ![](doc/sample_window.png)
 
 ## Features
@@ -287,6 +290,11 @@ If you're not using gdb from the command line, make sure that your IDE is
 correctly configured to use GDB 7.10. On QtCreator, go to
 `Tools`->`Options`->`Build & Run`->`Debuggers` and make sure that the
 configured path references a compatible GDB version.
+
+### EclipseIDE
+Please do this:  
+**Run->Debug Configuration->Debugger->GDB Command File**, input your **/path/to/gdb-imagewatch.py**, then you can see the magic!  
+
 
 ## Basic configuration
 
